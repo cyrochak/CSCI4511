@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{array}
+\usepackage{graphicx}
+\begin{document}
+\title{\emph{CSCI4511W Project Proposal }\\
+	\emph{The Best Move of Tic-Tac-Toe}}
+\author{Cyro Chun F, Chak} 
+\maketitle
+\section{Purpose}
+The purpose of this proposal document will be given a general idea about how to write an automated player for a non-trivial two player game,Ultimate Tic-Tac-Toe.
+\section{Problem Description}
+Tic-Tac-Toe is a game that originate to play on pencils and papers. It allows two players to mark a spot in a 3X3 grid, and it takes turns one and other. However, In our Ultimate Tic-Tac-Toe, there are some special rule. Each turn, each player mark on of the small square in the grid. The winning criteria of a small 3X3 grid will be the same as the old. When you get a horizontal, vertical, diagonal, you win. There is one more special rules for the game, you do not pick which of the nine grid you are going to play. Your opponent will pick the square that depends on which square you are going to play in next. Assuming your opponents pick A13 in a small grid, you will be playing the third grid which is the A13 in a big grid. The winning criteria will be same as before.
+\section{Approach}
+In the program, I will be writing most of my part from scratch, My approach on the Ultimate Tic-Tac-Toe will be on Minimax Search. I will also try to implement Alpha-beta pruning. Using Alpha-Beta Pruning in Tic-Tac-Toe may help reducing any states. The reason behind using Alpha-Beta Pruning is because there are a lot of possible moves in a Ultimate Tic-Tac-Toe. Using, the pruning, will help save a lot of searching time. I will also compare other algorithm online to analysis whether minimax algorithm with Alpha-Beta pruning is the best algorithm for Tic-Tac Toe.
+\section{Software}
+The Ultimate Tic-Tac-Toe is planned to implement in C++, however, I planned to use some code/algorithm that is found in the Internet. Therefore, there is a higher change the code will be written in Python possibly.
+\section{Testing}
+Testing will be done by running the program for 10 times for Player go first and AI go first. I will compute the running time for each move and the winning rate to check whether which algorithm is better.
+\section{Time Management}
+\begin{tabular}{| m{5cm} | m{5cm} | m{5cm} | } 
+\hline 
+Objective & Activities & Expected Time Completion\\ 
+\hline \hline
+Understand different searching algorithm that will benefits Ultimate Tic-Tac-Toe & choose and Research the best two algorithm to work on & April 5 \\
+
+\hline
+Research for existed base that will benefits our algorithm & Write or Research one original code and one with other algorithm & April 15\\ 
+\hline
+Working all the code & Finishing up the code, Start comparing the result and record the result & April 25 \\
+
+\hline
+Report & Analyze the result and start working on the report & April 31\\ 
+\hline
+Wrap up & Finish the project and the final paper & May 3 \\
+\hline
+   \end{tabular}
+\newpage
+\bibliographystyle{plain}
+\bibliography{bib}
+\cite{*}
+\end{document}
